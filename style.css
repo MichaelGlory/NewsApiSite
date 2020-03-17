@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;   
+}
+
+                                    /*Styling the us and icon elements */
+
+
+nav{
+    width: 100%;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+nav ul li h1 img{
+    width: 15%;
+}
+                                /* Styling Nav bar */
+nav ul.logo {
+    float: left;
+    margin: 2% 0 2% 10%;
+}
+nav ul.nav{
+    float: right;
+    margin: 3% 12% 2% 0; 
+
+}
+nav ul li.nav{
+    font-size: .9rem;
+    letter-spacing: 3px;
+    font-weight: 550;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    
+}
+nav ul li.nav a{
+    text-decoration: none;
+    color: #37a849;
+    margin-right: 30px;
+}
+nav ul li.nav a:hover{
+    text-decoration: underline;
+}
+
+                                    /* defining the grid */
+
+
+div.container{
+    display: grid;
+    grid-template-rows:  repeat(2, 1fr) ;
+    grid-template-columns: repeat(8, 1fr);
+    clear: both;
+    grid-gap: 20px 10px;
+    
+}
+div.item{
+    grid-row: 1 / 2;
+    grid-column: 2 / 8;
+    background-color:white;
+    border-radius: 20px;
+}
+div.item1{
+    background-color: white;
+    grid-row: 2 / 3 ;
+    grid-column:  2 / 4;
+    border-radius: 20px;
+    height: 600px;
+    row-gap: 5% ;
+}
+div.item2{
+    grid-row: 2 / 3;
+    grid-column:  4 / 6;
+    background-color: white;
+    border-radius: 20px;
+    height: 600px;
+
+}
+div.item3 {
+    grid-row: 2 / 3;
+    grid-column:  6 / 8;
+    background-color: white;
+    border-radius: 20px;
+    height: 600px;
+}
+div.item4{
+    grid-row: 3;
+    grid-column:  2 / 4;
+    background-color: white;
+    border-radius: 20px;
+    height: 600px;
+    margin-top: -30%;
+}
+div.item5{
+    grid-row: 3;
+    grid-column:  4 / 6;
+    background-color: white;
+    border-radius: 20px;
+    height: 600px;
+    margin-top: -30%;
+}
+div.item6{
+    grid-row: 3;
+    grid-column:  6 / 8;
+    background-color: white;
+    border-radius: 20px;
+    height: 600px;
+    margin-top: -30%;
+}
+
+                                        /*styling Imgs */
+
+div.item img{
+    width: 100%;
+    height: 70vh;
+    border-radius: 20px 20px 0 0 ;
+}
+div.item1 img,
+div.item2 img,
+div.item3 img,
+div.item4 img,
+div.item5 img,
+div.item6 img
+{
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+}
+
+
+                                                /*Appling Box Shadow*/
+
+/*
+div.item,
+div.item1,
+div.item2,
+div.item3,
+div.item4,
+div.item5,
+div.item6 
+{
+    box-shadow: 5px 5px 20px rgb(182, 182, 182);
+}
+*/
+
+                            /* styling the header elements*/
+
+
+div.item h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+div.item1 h2,
+div.item2 h2,
+div.item3 h2,
+div.item4 h2,
+div.item5 h2,
+div.item6 h2{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 2% 5% ;
+    
+}
+div.item p{ 
+    text-align: center;
+    padding: 2% 10% 2% 10%;
+    letter-spacing: 1px;
+}
+div.item1 p,
+div.item2 p,
+div.item3 p,
+div.item4 p,
+div.item5 p,
+div.item6 p{
+    margin: 4% 15%;
+    letter-spacing: 1px;
+}
+
+
+                            /*Buttons */
+
+
+div.item1 button,
+div.item2 button,
+div.item3 button,
+div.item4 button,
+div.item5 button,
+div.item6 button{
+    padding: 15px 40px;
+    background-color: #37a849;
+    margin: 0 0 0 30%;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    z-index: 9999;
+    letter-spacing: 3px;
+}
+div.item1 button:hover,
+div.item2 button:hover{
+    background-color: transparent;
+    color: #37a849;
+    border: solid #37a849 2px;
+    cursor: pointer;
+}
+
+
